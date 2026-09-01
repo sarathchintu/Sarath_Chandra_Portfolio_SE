@@ -1,0 +1,387 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarath | Portfolio</title>
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cursor_shadow"></div>
+    <nav>
+      <h2 class="nav_heading">Mr.Sarath Chandra</h2>
+      <h2 class="nav_menu_option">more.</h2>
+    </nav>
+    <hr class="custome_hr" />
+
+    <div class="hero_section">
+      <span class="star star-1"></span>
+      <span class="star star-2"></span>
+      <span class="star star-3"></span>
+      <span class="star star-4"></span>
+      <span class="star star-5"></span>
+      <span class="star star-6"></span>
+      <span class="star star-7"></span>
+      <h3 class="hero_greeting">Welocme to My World!</h3>
+      <h1 class="hero_name" id="hero_name">SARATH CHANDRA</h1>
+      <p class="hero_details">
+        +91 6302133327 | sarathc381@gmail.com | Let's connect
+      </p>
+      <p class="name_hover">↑ hover my name</p>
+      <img
+        src="{% static 'media/images/sarath.jpg' %}"
+        class="hero_img"
+        id="hero_img"
+      />
+      <!-- <img
+        src="{% static 'media/images/sarath bill_bord.png' %}"
+        class="hero_bill_board"
+        id="hero_bill_board"
+      /> -->
+      <div class="hero_video_section">
+        <video
+          src="{% static 'media/videos/animi_2.mp4' %}"
+          class="hero_video"
+          id="hero_video"
+        ></video>
+        <img
+          src="{% static 'media/images/play-button.png' %}"
+          class="hero_video_play_button"
+          id="hero_video_play_button"
+        />
+      </div>
+    </div>
+
+    <hr class="custome_hr" />
+
+    <div class="philosophy" id="philosophy">
+      <h1>THE LAW OF RISING</h1>
+      <h3>
+        Don’t ask life to become easier. Become harder to defeat. Let it knock
+        you down. Rise every time. Remember why you started. Never stop until
+        you win.
+      </h3>
+      <video
+        src="{% static 'media/videos/space_1.mp4' %}"
+        loop
+        muted
+        playsinline
+        class="philosophy_video"
+        id="philosophy_video"
+      ></video>
+    </div>
+
+    <hr class="custome_hr" />
+
+    <div class="projects">
+      <h2>My Works</h2>
+      <div class="project_cards">
+        <div class="project_card">
+          <img src="{% static 'media/images/ccc_project.png' %}" />
+          <div class="project_breef">
+            <h3>Cozy Cuppa Cafe</h3>
+            <p>
+              A full-stack coffee ordering web application built with Django and
+              PostgreSQL, featuring secure user authentication, menu browsing,
+              search and category filtering, cart and checkout, multiple
+              delivery addresses, order tracking, reviews, and email order
+              confirmations. The application provides a responsive and
+              user-friendly online coffee ordering experience.
+            </p>
+            <a href="https://cozy-cuppa-cafe.onrender.com/" target="_blank"
+              >Click Here</a
+            >
+          </div>
+        </div>
+
+        <div class="project_card">
+          <div class="project_breef">
+            <h3>Expence Tracker</h3>
+            <p>
+              A full-stack expense tracking web application built with Django,
+              Python, and PostgreSQL, designed to help users manage and monitor
+              their daily expenses. Built from scratch to understand web
+              application fundamentals, it includes secure authentication,
+              session management, category-based expense tracking, transaction
+              management, expense calculations, cloud image storage, and a
+              responsive user interface.
+            </p>
+            <a
+              href="https://expense-tracker-b366.onrender.com/login"
+              target="_blank"
+              >Click Here</a
+            >
+          </div>
+          <img src="{% static 'media/images/expense_tracker_project.png' %}" />
+        </div>
+
+        <div class="project_card">
+          <img src="{% static 'media/images/weather_project.png' %}" />
+          <div class="project_breef">
+            <h3>Weather App</h3>
+            <p>
+              A weather forecasting web application that uses a weather API to
+              provide real-time and daily weather forecasts for a selected
+              location. Users can view hourly weather conditions from 12:00 AM
+              to 11:59 PM, along with temperature, air quality, humidity, wind
+              speed, sunrise and sunset times, and other weather details through
+              a responsive and user-friendly interface.
+            </p>
+            <a href="https://weatherdoctor.netlify.app/" target="_blank"
+              >Click Here</a
+            >
+          </div>
+        </div>
+
+        <div class="project_card">
+          <div class="project_breef">
+            <h3>Rock Paper Scissors</h3>
+            <p>
+              A Rock Paper Scissors game where a human player competes against
+              the computer. The player selects one of three options—Rock, Paper,
+              or Scissors—while the computer makes a random choice. The game
+              compares both choices according to the defined rules, awards
+              points to the winner, and displays the final score based on the
+              players’ choices throughout the game.
+            </p>
+            <a
+              href="https://rockpaperscissorgaming.netlify.app/"
+              target="_blank"
+              >Click Here</a
+            >
+          </div>
+          <img src="{% static 'media/images/rock_paper_project.png' %}" />
+        </div>
+
+        <div class="project_card">
+          <img src="{% static 'media/images/bmr_project.png' %}" />
+          <div class="project_breef">
+            <h3>BMR Calculator</h3>
+            <p>
+              A BMR and calorie calculator that takes essential user inputs such
+              as age, gender, height, weight, and activity level to calculate
+              BMR and daily calorie requirements. It also provides personalized
+              calorie recommendations for weight loss or weight gain, with
+              different targets such as mild, moderate, and fast progress based
+              on the user’s selected goal.
+            </p>
+            <a
+              href="https://sarathc381.github.io/BMR-calculator/index.html"
+              target="_blank"
+              >Click Here</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="custome_hr" />
+
+    <div class="skills">
+      <h2>My Strengths</h2>
+      <div class="skill_cards">
+        <div class="skill_card">
+          <img src="{% static 'media/images/python_logo.png' %}" />
+          <h3>Python</h3>
+          <p>Level : Strong</p>
+        </div>
+
+        <div class="skill_card">
+          <img src="{% static 'media/images/djano_logo.png' %}" />
+          <h3>Django</h3>
+          <p>Level : Strong</p>
+        </div>
+
+        <div class="skill_card">
+          <img src="{% static 'media/images/sql_logo_2.jpg' %}" />
+          <h3>SQL</h3>
+          <p>Level : Strong</p>
+        </div>
+
+        <div class="skill_card">
+          <img src="{% static 'media/images/web_development.png' %}" />
+          <h3>Full Stack Development</h3>
+          <p>Level : Strong</p>
+        </div>
+
+        <div class="skill_card">
+          <img src="{% static 'media/images/html_logo.jpg' %}" />
+          <h3>HTML</h3>
+          <p>Level : Strong</p>
+        </div>
+
+        <div class="skill_card">
+          <img src="{% static 'media/images/css_logo.jpg' %}" />
+          <h3>CSS</h3>
+          <p>Level : Strong</p>
+        </div>
+
+        <div class="skill_card">
+          <img src="{% static 'media/images/js_logo_2.jpg' %}" />
+          <h3>Java Script</h3>
+          <p>Level : Intermediate</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="custome_hr" />
+
+    <div class="education">
+      <h2>My Journey</h2>
+      <div class="education_cards">
+        <div class="education_card">
+          <div class="education_details">
+            <h3 class="degree_name">Bachelor’s Degree in Computer Science</h3>
+            <p class="college ed_details">
+              Saveetha School of Engineering, Chennai
+            </p>
+            <p class="degree_duration ed_details">From 2021 to 2025</p>
+            <p class="degree_result ed_details">CGPA: 8.1</p>
+            <p class="degree_highlight ed_details">
+              Where excitement turned into code, and where I also learned the
+              real meaning of life.
+            </p>
+          </div>
+          <img src="{% static 'media/images/engineering.jpeg' %}" />
+        </div>
+
+        <div class="education_card">
+          <img src="{% static 'media/images/jr.college.jpeg' %}" />
+          <div class="education_details">
+            <h3 class="degree_name">Junior College – Science Stream</h3>
+            <p class="college">Narayana jr.college, Nellore</p>
+            <p class="degree_duration">From 2019 to 2021</p>
+            <p class="degree_result">CGPA: 8.0</p>
+            <p class="degree_highlight">
+              The phase where childhood ended and responsibility began —
+              learning to take my own decisions.
+            </p>
+          </div>
+        </div>
+
+        <div class="education_card">
+          <div class="education_details">
+            <h3 class="degree_name">Schooling - General Stream</h3>
+            <p class="college">Narayana Group of Schools, Nellore</p>
+            <p class="degree_duration">From 2018 to 2019</p>
+            <p class="degree_result">CGPA: 8.5</p>
+            <p class="degree_highlight">
+              The phase where my education journey began — the moment my dad
+              left my hand at the school gates.
+            </p>
+          </div>
+          <img src="{% static 'media/images/school.jpeg' %}" />
+        </div>
+      </div>
+    </div>
+
+    <hr class="custome_hr" />
+
+    <div class="more_details">
+      <div class="more_details_card">
+        <h3>more about me</h3>
+        <p>Based in Nellore, Andhra Pradesh.</p>
+        <p>
+          I learn by building, breaking, fixing, and understanding why something
+          works—not just by memorizing how to use it.
+        </p>
+        <p>
+          When I'm not coding, you'll probably find me training, experimenting
+          with calisthenics, or coming up with ideas for my next project.
+        </p>
+        <p>
+          Currently focused on strengthening my skills in Python, SQL, cloud
+          technologies, and building practical projects.
+        </p>
+        <p>
+          Looking for a good role where I can put my skills into practice,
+          contribute to real-world projects, and grow continuously as a
+          developer.
+        </p>
+        <div class="social_links_sec">
+          <h3>—— social</h3>
+          <ul class="social_media_links">
+            <li>
+              <a href="https://www.facebook.com/sarath.bollam" target="_blank"
+                ><img src="{% static 'media/images/social.png' %}" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sarathxfit/" target="_blank"
+                ><img src="{% static 'media/images/instagram.png' %}" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://x.com/sarathc381" target="_blank"
+                ><img src="{% static 'media/images/twitter.png' %}" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/sarathchintu?tab=repositories"
+                target="_blank"
+                ><img src="{% static 'media/images/github.png' %}" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/sarath-chandra-246b05285/"
+                target="_blank"
+                ><img src="{% static 'media/images/linkedin.png' %}" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="message_form">
+        <h3>Wanna Connect</h3>
+        <form class="email_form" method="POST">
+          {% csrf_token %}
+          <label>Your Email</label>
+          <input
+            type="email"
+            placeholder="your@gmail.com"
+            name="sender_email"
+            id="sender_email"
+            required
+          />
+          <label>Subject</label>
+          <input
+            type="text"
+            placeholder="write your subject"
+            name="email_subject"
+            id="email_subject"
+            required
+          />
+          <label>Message</label>
+          <textarea
+            rows="3"
+            cols="15"
+            placeholder="write your message..."
+            name="message"
+            id="message"
+            required
+          ></textarea>
+          <button type="submit" id="send_btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <hr class="custome_hr" />
+
+    <footer>
+      <p>&copy 2026 sarath chandra. Created with passion</p>
+    </footer>
+
+    <div class="mail_status" id="mail_status"></div>
+
+    <script src="{% static 'js_files/home.js' %}"></script>
+  </body>
+</html>
