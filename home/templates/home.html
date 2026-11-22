@@ -102,6 +102,24 @@
         </div>
 
         <div class="project_card">
+          <img src="{% static 'media/images/chat_bot_project2.png' %}" />
+          <div class="project_breef">
+            <h3>AI Chatbot Assistant</h3>
+            <p>
+              Developed an AI-powered chatbot application using Django and
+              Google's LLM API to provide intelligent, context-aware
+              conversational responses. Implemented PostgreSQL for persistent
+              data storage with Supabase as the database hosting solution.
+              Deployed the application on Render, ensuring reliable cloud
+              hosting, scalability, and smooth user interactions. The project
+              demonstrates full-stack development, API integration, database
+              management, and cloud deployment skills.
+            </p>
+            <a href="https://sarath-ai.onrender.com/">Click Here</a>
+          </div>
+        </div>
+
+        <div class="project_card">
           <div class="project_breef">
             <h3>Expence Tracker</h3>
             <p>
@@ -340,37 +358,35 @@
           </ul>
         </div>
       </div>
+    </div>
+
+    <div class="emailing_agent">
+      <h3>Wanna Connect</h3>
       <div class="message_form">
-        <h3>Wanna Connect</h3>
-        <form class="email_form" method="POST">
+        <form class="email_form" method="post">
           {% csrf_token %}
           <label>Your Email</label>
           <input
             type="email"
             placeholder="your@gmail.com"
             name="sender_email"
-            id="sender_email"
+            id="visitor_email"
             required
           />
-          <label>Subject</label>
-          <input
-            type="text"
-            placeholder="write your subject"
-            name="email_subject"
-            id="email_subject"
-            required
-          />
-          <label>Message</label>
+          <label>Context</label>
           <textarea
             rows="3"
             cols="15"
-            placeholder="write your message..."
+            placeholder="write your Context..."
             name="message"
-            id="message"
+            id="mail_context"
             required
           ></textarea>
           <button type="submit" id="send_btn">Send</button>
         </form>
+        <div class="agent" id="agent_playground">
+          <h3>Agent Interaction Area</h3>
+        </div>
       </div>
     </div>
 

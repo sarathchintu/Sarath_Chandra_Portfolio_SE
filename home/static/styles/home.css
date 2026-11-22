@@ -412,12 +412,14 @@ nav{
     }
 }
 
-.message_form{
-    width: 40%;
+.emailing_agent{
+    width:100%;
+    height:400px;
+    background-color: #a685e2;
     display: flex;
     flex-direction: column;
     gap:20px;
-    padding:20px;
+    padding: 20px;
     h3{
         font-family: var(--font-heading);
         color:rgba(248, 29, 80, 0.4);
@@ -425,8 +427,16 @@ nav{
     }
 }
 
+.message_form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap:10px;
+}
+
 .email_form{
-    width:100%;
+    width:40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap:10px;
@@ -457,6 +467,41 @@ nav{
         font-weight: bold;
     }
 
+}
+
+.agent{
+    width:60%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: rgb(40, 39, 39);
+    padding:20px;
+    border-radius: 20px;
+    h3{
+        font-family: var(--font-heading);
+        color:rgba(248, 29, 80, 0.4);
+        font-size: 1.3rem;
+    }
+}
+
+.decision_btns{
+    width:100%;
+    display: flex;
+    gap:20px;
+}
+
+.btn{
+    outline: none;
+    border: 1px solid black;
+    padding:2px 5px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-family: var(--font_body);
+    cursor: pointer;
 }
 
 .social_links_sec{
